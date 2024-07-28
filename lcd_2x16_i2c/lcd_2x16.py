@@ -28,9 +28,9 @@ counter = 0
 while True:
     lcd.move_to(0,0)	# Moves to coordinate (0,0)
     lcd.putstr("2x16 LCD Demo") # Prints the string in LCD
-    lcd.move_to(0,1)
     
+    lcd.move_to(0,1)
     counter = counter + 1
-    lcd.putstr(counter)
+    lcd.putstr(str(counter))
     print("Counter: %d" % (counter)) # Change from int to str is needed to print in LCD
     sleep(1)
