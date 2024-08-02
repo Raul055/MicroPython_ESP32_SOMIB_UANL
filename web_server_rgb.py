@@ -14,8 +14,8 @@ def set_color(r, g, b):
     blue_pin.duty(b)
 
 # Connect to Wi-Fi
-ssid = 'Totalplay-2.4G-2698'
-password = 'KEBRjyBQQj5U4DRH'
+ssid = 'Put here the SSID from your wifi' # Works best for 2.4G than for 5G
+password = 'Put here your wifi password'
 
 station = network.WLAN(network.STA_IF)
 station.active(True)
